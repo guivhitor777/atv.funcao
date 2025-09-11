@@ -41,21 +41,49 @@
 # media = contador / n
 # print(media)
 
-# q7:
-n=int(input("Digite um número qualquer para calcular seu fatorial: "))
-fat = 1
-for n in range(n,1,-1):
-    fat=fat*n
-print(f"O fatorial do número digitado é: {fat}.")
+# # q7:
+# def fatorial(n):
+#     fat = 1
+#     for n in range(n, 1,-1):
+#         fat = fat * n
+#     print(f"O fatorial do número digitado é: {fat}.")
+
+# fatorial(10)
 
 # q8:
-palavra=input("Digite uma palavra qualquer: ")
-vogais="aAáÁàÀâÂãÃeEéÉêÊiIíÍoOóÓôÔõÕuUúÚ"
-contador=0
-for caractere in palavra:
-    if caractere in vogais:
-        contador+=1
-print(f"A palavra {palavra} tem {contador} vogais.")
+# def palavra(palavra):
+#     palavra_str = str(palavra)
+#     vogais = "aAáÁàÀâÂãÃeEéÉêÊiIíÍoOóÓôÔõÕuUúÚ"
+#     contador = 0
+#     for caractere in palavra_str:
+#         if caractere in vogais:
+#             contador += 1
+#     print(f"A palavra {palavra} tem {contador} vogais.")
+# palavra("Guilherme")
 
-# q9:
-n = int(input("Digite um número:"))
+# # q9:
+# from random import randint 
+# numero = randint(1, 20)
+# while True:
+#     n = int(input("Digite um número: "))
+#     if n > numero:
+#         print("O número que você digitou é maior")
+#         n = int(input("Tente novamente: "))
+#     elif n < numero:
+#         print("O número que você digitou é menor")
+#         n = int(input("Tente novamente: "))
+#     elif n == numero:
+#         print("Você acertou!")
+#         break
+
+# q10
+n = int(input("Digite um número: "))
+par = 0
+for i in range(n):
+    if i % 2 == 0:
+        par += i
+print(f"A soma dos pares é: {par}") 
+
+# q11
+
+#q12
