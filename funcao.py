@@ -76,14 +76,39 @@
 #         print("Você acertou!")
 #         break
 
-# q10
-n = int(input("Digite um número: "))
-par = 0
-for i in range(n):
-    if i % 2 == 0:
-        par += i
-print(f"A soma dos pares é: {par}") 
+# # q10
+# n = int(input("Digite um número: "))
+# par = 0
+# for i in range(n):
+#     if i % 2 == 0:
+#         par += i
+# print(f"A soma dos pares é: {par}") 
 
-# q11
+# # q11
+# def calculadora():
+#     print("1 - soma, 2 - subtração, 3 - Multiplicação, 4 - Divisão")
+#     n1 = float(input("Digite um número: "))
+#     n2 = float(input("Digite um número: "))
+#     operacao = int(input("Digite a operação: "))
+#     if operacao == 1:
+#         print(f"{n1 + n2}")
+#     if operacao == 2:
+#         print(f"{n1 - n2}")
+#     if operacao == 3:
+#         print(f"{n1 * n2}")
+#     if operacao == 4:
+#         print(f"{n1 / n2}")
+
+# calculadora()
 
 #q12
+def primo(n):
+    raiz = n**0.5
+    for i in range(raiz):
+        if n / i == 0:
+           e_primo = False
+        if n / i != 0:
+           e_primo = True
+           return e_primo
+        e_primo = print("é primo")
+primo(7)
