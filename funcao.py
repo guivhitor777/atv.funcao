@@ -101,14 +101,38 @@
 
 # calculadora()
 
-#q12
-def primo(n):
-    raiz = n**0.5
-    for i in range(raiz):
-        if n / i == 0:
-           e_primo = False
-        if n / i != 0:
-           e_primo = True
-           return e_primo
-        e_primo = print("é primo")
-primo(7)
+# #q12
+# def primo(n):
+#     for i in range(2, int(n**0.5) + 2):
+#         if n % i == 0:
+#          print("Não é primo")
+#         if n % i != 0:
+#          return print("primo")
+# primo(7)
+
+# q13
+# def invertida(palavra):
+#     resultado = palavra[::-1]
+#     print(f"{palavra} de tras para frente é {resultado}")
+# invertida("Tacocat")
+ 
+# # q14
+# pares = 0
+# impares = 0
+# for n in range(1, 10 + 1):
+#     num = int(input(f"Digite o número {n}: "))
+#     if num % 2 == 0:
+#         pares += 1
+#     if num % 2 != 0:
+#         impares += 1
+# print(f"Dos número digitado {pares} são pares e {impares} são ímpares")
+
+# # q15
+# def fibonacci(n):
+#     a, b = 0, 1
+#     resultado = []
+#     while a <= n:
+#         resultado.append(a)
+#         a, b = b, b + a 
+#     print(f"A sequecia de Fibonacci até esse número é {resultado}")
+# fibonacci(20)
